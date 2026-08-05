@@ -1,4 +1,4 @@
-# 🎬 Anime Episode Blog
+# 🎬 Anime Archive
 
 A unique **anime-inspired blogging platform** built using **Node.js**, **Express**, **EJS**, and **CSS**. Instead of traditional blog posts, every entry is treated as an **episode**, allowing you to turn your personal journey into an anime series complete with arcs, episode numbers, synopses, and story chapters.
 
