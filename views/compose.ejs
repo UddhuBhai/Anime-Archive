@@ -1,0 +1,64 @@
+<%- include("partials/header") %>
+<%- include("partials/navbar") %>
+
+<section class="compose-page">
+
+    <div class="compose-card">
+
+        <p class="system">SYSTEM</p>
+
+        <h1>New Episode Registration</h1>
+
+        <p class="system-subtitle">
+            Archive another chapter of your journey.
+        </p>
+
+        <form action="/compose" method="POST">
+
+            <div class="form-group">
+                <label>Episode Title</label>
+                <input
+                    type="text"
+                    name="title"
+                    placeholder="The Beginning..."
+                    required>
+            </div>
+
+            <div class="form-group">
+                <label>Arc Name</label>
+                <input
+                    type="text"
+                    name="arc"
+                    placeholder="Developer Awakening Arc"
+                    required>
+            </div>
+
+            <div class="form-group">
+                <label>Synopsis</label>
+                <input
+                    type="text"
+                    name="synopsis"
+                    placeholder="A short preview..."
+                    required>
+            </div>
+
+            <div class="form-group">
+                <label>Your Story</label>
+                <textarea
+                    name="content"
+                    rows="12"
+                    placeholder="Write your episode..."
+                    required></textarea>
+            </div>
+
+            <button type="submit" class="publish-btn">
+                Publish Episode →
+            </button>
+
+        </form>
+
+    </div>
+
+</section>
+
+<%- include("partials/footer") %>

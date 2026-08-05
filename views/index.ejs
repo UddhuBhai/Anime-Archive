@@ -1,0 +1,92 @@
+<%- include("partials/header") %>
+<%- include("partials/navbar") %>
+
+<section class="hero">
+
+    <p class="season">
+        Season 1
+    </p>
+
+    <h1>
+        Every Developer<br>
+        has an Anime.
+    </h1>
+
+    <p class="subtitle">
+        Turn your coding journey into episodes.
+        Every bug, every victory, every late-night breakthrough—
+        archive it forever.
+    </p>
+
+    <a href="/compose" class="hero-btn">
+        Begin Your Story →
+    </a>
+
+</section>
+
+<section class="episodes">
+
+    <h2>Latest Episodes</h2>
+
+    <div class="episode-grid">
+
+        <% if (posts.length === 0) { %>
+
+            <div class="episode-card">
+
+                <span>EPISODE 000</span>
+
+                <h3>Your Story Begins Here</h3>
+
+                <p class="arc">
+                    The Beginning Arc
+                </p>
+
+                <p class="synopsis">
+                    Every legendary anime starts with Episode 1.
+                    Begin your journey by creating your first episode.
+                </p>
+
+                <a href="/compose">
+                    Create Episode →
+                </a>
+
+            </div>
+
+        <% } else { %>
+
+            <% posts.forEach(post => { %>
+
+                <div class="episode-card">
+
+                    <span>
+                        EPISODE <%= String(post.episode).padStart(3, "0") %>
+                    </span>
+
+                    <h3>
+                        <%= post.title %>
+                    </h3>
+
+                    <p class="arc">
+                        <%= post.arc %>
+                    </p>
+
+                    <p class="synopsis">
+                        <%= post.synopsis %>
+                    </p>
+
+                    <a href="/episode/<%= post.id %>">
+                        Read Episode →
+                    </a>
+
+                </div>
+
+            <% }) %>
+
+        <% } %>
+
+    </div>
+
+</section>
+
+<%- include("partials/footer") %>

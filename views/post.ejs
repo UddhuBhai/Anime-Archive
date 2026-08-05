@@ -1,0 +1,57 @@
+<%- include("partials/header") %>
+<%- include("partials/navbar") %>
+
+<section class="episode-page">
+
+    <div class="episode-header">
+
+        <p class="episode-number">
+            EPISODE <%= String(post.episode).padStart(3,'0') %>
+        </p>
+
+        <h1>
+            <%= post.title %>
+        </h1>
+
+        <span class="arc-badge">
+            <%= post.arc %>
+        </span>
+
+    </div>
+
+    <div class="episode-content">
+
+        <p>
+            <%= post.content %>
+        </p>
+
+    </div>
+
+    <div class="action-buttons">
+
+    <a href="/edit/<%= post.id %>" class="edit-btn">
+        ✏️ Edit Episode
+    </a>
+
+    <form
+    action="/delete/<%= post.id %>"
+    method="POST"
+    onsubmit="return confirm('Delete this episode?')">
+
+        <button class="delete-btn">
+            🗑 Delete Episode
+        </button>
+
+    </form>
+
+    </div>
+    
+    <div class="ending-card">
+
+        <h2>To Be Continued ▶</h2>
+
+    </div>
+
+</section>
+
+<%- include("partials/footer") %>
