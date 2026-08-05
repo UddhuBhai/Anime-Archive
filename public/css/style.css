@@ -1,0 +1,231 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background:#0B1120;
+    color:white;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+a{
+    text-decoration:none;
+}
+
+.navbar{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:25px 8%;
+
+    background:#111827;
+
+}
+
+.logo{
+
+    font-size:2rem;
+
+    color:#5B8CFF;
+
+}
+
+.nav-links{
+
+    display:flex;
+
+    gap:35px;
+
+}
+
+.nav-links a{
+
+    color:white;
+
+    transition:.3s;
+
+}
+
+.nav-links a:hover{
+
+    color:#5B8CFF;
+
+}
+
+.hero{
+
+    text-align:center;
+
+    padding:120px 10%;
+
+}
+
+.season{
+
+    color:#5B8CFF;
+
+    margin-bottom:20px;
+
+    letter-spacing:3px;
+
+}
+
+.hero h1{
+
+    font-size:4rem;
+
+    line-height:1.2;
+
+}
+
+.subtitle{
+
+    width:700px;
+
+    max-width:100%;
+
+    margin:30px auto;
+
+    color:#b9bfd4;
+
+    line-height:1.7;
+
+}
+
+.hero-btn{
+
+    display:inline-block;
+
+    padding:15px 40px;
+
+    background:#5B8CFF;
+
+    color:white;
+
+    border-radius:8px;
+
+    margin-top:15px;
+
+    transition:.3s;
+
+}
+
+.hero-btn:hover{
+
+    transform:translateY(-3px);
+
+}
+
+.episodes{
+
+    width:90%;
+
+    margin:80px auto;
+
+}
+
+.episodes h2{
+
+    margin-bottom:40px;
+
+}
+
+.episode-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+
+    gap:30px;
+
+}
+
+.episode-card{
+
+    background:#131B2E;
+
+    padding:30px;
+
+    border-radius:12px;
+
+    transition:.3s;
+
+}
+
+.episode-card:hover{
+
+    transform:translateY(-10px);
+
+}
+
+.episode-card span{
+
+    color:#5B8CFF;
+
+    font-size:.9rem;
+
+}
+
+.episode-card h3{
+
+    margin:15px 0;
+
+}
+
+.episode-card p{
+
+    color:#b9bfd4;
+
+    margin-bottom:20px;
+
+}
+
+.episode-card a{
+
+    color:#5B8CFF;
+
+}
+
+@media (max-width:768px){
+
+    .navbar{
+        flex-direction:column;
+        gap:20px;
+        padding:20px;
+    }
+
+    .nav-links{
+        gap:20px;
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+
+}
+
+footer{
+
+    margin-top:100px;
+
+    padding:40px;
+
+    text-align:center;
+
+    background:#111827;
+
+    color:#9CA3AF;
+
+}
+
+footer small{
+
+    display:block;
+
+    margin-top:10px;
+
+}

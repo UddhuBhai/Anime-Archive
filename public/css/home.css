@@ -1,0 +1,140 @@
+.hero{
+    text-align:center;
+    padding:120px 10%;
+}
+
+.season{
+    color:#5B8CFF;
+    letter-spacing:4px;
+    margin-bottom:15px;
+}
+
+.hero h1{
+    font-size:4rem;
+    line-height:1.2;
+}
+
+.subtitle{
+    width:700px;
+    max-width:100%;
+    margin:30px auto;
+    color:#B8C1D1;
+    line-height:1.8;
+}
+
+.hero-btn{
+    display:inline-block;
+    margin-top:20px;
+    padding:15px 40px;
+    background:#5B8CFF;
+    color:white;
+    border-radius:10px;
+    transition:.3s;
+}
+
+.hero-btn:hover{
+    transform:translateY(-4px);
+}
+
+.episodes{
+    width:90%;
+    margin:80px auto;
+}
+
+.episodes h2{
+    margin-bottom:35px;
+}
+
+.episode-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+
+    gap:30px;
+
+}
+
+.episode-card{
+
+    background:#131B2E;
+
+    border-radius:16px;
+
+    padding:30px;
+
+    transition:.3s;
+
+    border:1px solid rgba(91,140,255,.15);
+
+}
+
+.episode-card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:0 0 25px rgba(91,140,255,.25);
+
+}
+
+.episode-card span{
+
+    color:#5B8CFF;
+
+    letter-spacing:2px;
+
+    font-size:.85rem;
+
+}
+
+.episode-card h3{
+
+    margin:15px 0;
+
+    font-size:1.6rem;
+
+}
+
+.arc{
+
+    color:#8FA5D8;
+
+    font-weight:600;
+
+    margin-bottom:15px;
+
+}
+
+.synopsis{
+
+    color:#B7C1D5;
+
+    line-height:1.7;
+
+    margin-bottom:25px;
+
+}
+
+.episode-card a{
+
+    color:#5B8CFF;
+
+    font-weight:bold;
+
+}
+
+@media (max-width:768px){
+
+.hero h1{
+
+    font-size:2.5rem;
+
+}
+
+.subtitle{
+
+    width:100%;
+
+}
+
+}
